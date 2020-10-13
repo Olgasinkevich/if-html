@@ -1,3 +1,4 @@
+@import url(Style-fonts-lesson-4.css);
 * {
     padding: 0;
     margin: 0;
@@ -5,9 +6,18 @@
 }
 h2 {
     margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 47px;
+}
+.home{
+    padding-top: 120px;
+        background-color: #EAF0F9;
+}
+.home>.container {
+    margin-top: 0;
 }
 .container {
-    width: 1264px;
+    width: 1440px;
     padding: 0 16px;
     margin: 120px auto 0;
 }
@@ -16,6 +26,7 @@ h2 {
 }
 .item-4 {
     width: 25%;
+    margin-bottom: 122px;
 }
 .text-center {
     text-align: center;
@@ -33,4 +44,22 @@ h2 {
     width: 100%;
     height: 100px;
     margin-bottom: 48px;
+}
+span {
+    font-size: 24px;
+    line-height: 28px;
+}
+image {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 296px;
+    height: 296px;
+    margin-bottom: 24px;
+}
+.item-4>span :first-of-type{
+    : #3077C6;
+}
+.item-4>span :last-of-type {
+    : #BFBFBF;
 }
