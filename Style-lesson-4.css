@@ -1,42 +1,52 @@
 @import url(Style-fonts-lesson-4.css);
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 105px;
     font-size: 40px;
     line-height: 47px;
 }
-.home{
+
+.home {
     padding-top: 120px;
-        background-color: #EAF0F9;
+    background-color: #EAF0F9;
 }
-.home>.container {
+
+.home > .container {
     margin-top: 0;
 }
+
 .container {
     width: 1440px;
     padding: 0 16px;
     margin: 120px auto 0;
 }
+
 .row {
     display: flex;
 }
+
 .item-4 {
     width: 25%;
     margin-bottom: 122px;
 }
+
 .text-center {
     text-align: center;
 }
+
 .title-line {
     width: 100px;
     height: 4px;
     background-color: #F5BD41;
     margin: 0 auto 80px;
 }
+
 .icon-wrap {
     display: inline-flex;
     justify-content: center;
@@ -45,10 +55,12 @@ h2 {
     height: 100px;
     margin-bottom: 48px;
 }
-span {
+
+.text-size {
     font-size: 24px;
     line-height: 28px;
 }
+
 image {
     display: inline-flex;
     justify-content: center;
@@ -57,9 +69,20 @@ image {
     height: 296px;
     margin-bottom: 24px;
 }
-.item-4>span :first-of-type{
-    : #3077C6;
+
+.text-blue {
+    color: #3077C6;
+    text-align: left;
 }
-.item-4>span :last-of-type {
-    : #BFBFBF;
+
+.text-grey {
+    color: #BFBFBF;
 }
+
+.box {
+    display: inline-flex;
+    margin-top: 24px;
+    width: 295px;
+    justify-content: flex-start;
+}
+
