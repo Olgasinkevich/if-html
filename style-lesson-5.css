@@ -1,0 +1,36 @@
+.container {
+    width: 1440px;
+    padding: 0 16px;
+    background-color: #10367C;
+}
+
+.row {
+    margin-top: 120px;
+
+}
+
+.item-3 {
+    width: 33.3%;
+    display: inline-block;
+
+}
+
+.text-footer {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 23px;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+}
+
+.caption-footer {
+    font-weight: 500;
+}
+
+.copy {
+    font-weight: 14px;
+    color: #FFFFFF;
+    margin: 87px auto 120px 103px;
+
+}
