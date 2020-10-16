@@ -1,21 +1,26 @@
 @import url(fonts-lesson-5.css);
 
 .container {
+    box-sizing: content-box;
     width: 1440px;
     padding: 120px 104px;
+    margin: 0 auto;
     background-color: #10367C;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-        }
+            }
 
 .item-3 {
     width: 33.3%;
-    }
+        }
+ul {
+    padding: 0;
+}
 
-.text-footer {
+li {
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
@@ -23,6 +28,7 @@
     font-size: 23px;
     margin-bottom: 24px;
     color: #FFFFFF;
+    list-style-type: none;
 }
 
 .caption-footer {
@@ -32,8 +38,7 @@
 .copy {
     font-size: 14px;
     color: #FFFFFF;
-    margin-top: 103px;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
 
 }
