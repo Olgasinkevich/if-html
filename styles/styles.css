@@ -13,13 +13,13 @@
     --stroke-color: #F3F3F4;
     --bg-color: #EAF0F9;
 }
-.sprite {
-    position:absolute;
-    visibility:hidden;
-    width:0;
-    height:0;
-}
 
+.sprite {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
 
 * {
     padding: 0;
@@ -52,6 +52,7 @@
     width: 205px;
     height: 40px;
     margin-right: auto;
+    margin-bottom: 17px;
 }
 
 svg {
@@ -65,7 +66,9 @@ svg {
     width: 40px;
     height: 40px;
     margin-left: 24px;
-  }
+    margin-bottom: 17px;
+}
+
 .svg-white.night {
     display: flex;
     justify-content: center;
@@ -115,7 +118,7 @@ select.room {
 table {
     border-collapse: collapse;
     border-spacing: 0;
- }
+}
 
 thead td {
     padding-bottom: 24px;
@@ -151,7 +154,7 @@ button.calendar {
 }
 
 h1 {
-    padding-top: 200px;
+    padding-top: 185px;
     padding-bottom: 100px;
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -192,13 +195,6 @@ h2 {
     background-color: var(--primary-dark);
 }
 
-@media only screen and (min-width: 768px, max-width: 1024px){
-    .item-4 {
-        flex-grow: 0;
-        width: 50%;
-    }
-}
-
 .row {
     display: flex;
     justify-content: space-between;
@@ -234,15 +230,30 @@ h2 {
 }
 
 span.text-size {
-    margin-right: 24px;
+    margin-bottom: 12px;
+    height: 40px;
 }
+
+.hide {
+    display: none;
+}
+
 hr {
     width: 50px;
     height: 4px;
-    color: var(--secondary);
+    background-color: var(--secondary);
 }
-:hover.hr {
 
+.hr {
+    height: 45px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.text-size:hover + .hide {
+    display: block;
 }
 
 image {
