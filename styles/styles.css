@@ -78,6 +78,10 @@ header {
     top: 40px;
 }
 
+h2:hover:after, .hr-1:hover:after, .hr-2:hover:after {
+    transform: scale(1.5);
+    transition: step-end .5s;
+}
 
 svg {
     display: flex;
@@ -214,11 +218,11 @@ h2:hover:after {
     left: calc(50% - 50px);
     bottom: -22px;
 }
-
+/*
 .home h2:after {
     display: none;
 }
-
+*/
 
 
 .container {
