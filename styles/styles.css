@@ -78,9 +78,22 @@ header {
     top: 40px;
 }
 
+h2:hover:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--secondary);
+    margin: 0 auto;
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: -22px;
+    }
+
 h2:hover:after, .hr-1:hover:after, .hr-2:hover:after {
     transform: scale(1.5);
-    transition: step-end .5s;
+    transition: transform 1s ease-in-out 200ms;
+
 }
 
 svg {
@@ -207,17 +220,7 @@ h2 {
     position: relative;
 }
 
-h2:hover:after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 4px;
-    background-color: var(--secondary);
-    margin: 0 auto;
-    position: absolute;
-    left: calc(50% - 50px);
-    bottom: -22px;
-}
+
 /*
 .home h2:after {
     display: none;
