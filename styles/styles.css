@@ -90,6 +90,10 @@ h2:hover:after {
     bottom: -22px;
     }
 
+h2:after, hr-1:after, hr-2:after {
+    transition: transform 1s ease-in-out 200ms;
+}
+
 h2:hover:after, .hr-1:hover:after, .hr-2:hover:after {
     transform: scale(1.5);
     transition: transform 1s ease-in-out 200ms;
