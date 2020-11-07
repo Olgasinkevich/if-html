@@ -109,11 +109,11 @@ h2:hover:after {
     bottom: -22px;
 }
 
-h2:after, hr-1:after, hr-2:after {
+/*h2:after,*/ hr-1:after, hr-2:after {
     transition: transform 1s ease-in-out 200ms;
 }
 
-h2:hover:after, .hr-1:hover:after, .hr-2:hover:after {
+/*h2:hover:after,*/ .hr-1:hover:after, .hr-2:hover:after {
     transform: scale(1.5);
     transition: transform 1s ease-in-out 200ms;
     cursor: pointer;
@@ -144,8 +144,8 @@ svg {
 
 .offer svg.carousel--button_down {
     transform: rotate(90deg);
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     margin: 48px auto 0;
 
 }
@@ -414,6 +414,11 @@ p.check {
     position: absolute;
     right: -15px;
     top: 130px;
+    margin: 0;
+    }
+svg.carousel--button_next {
+    width: 48px;
+    height: 48px;
 }
 
 .carousel--button_next:hover, .carousel--button_down:hover {
@@ -452,8 +457,8 @@ svg {
 .home hr {
     visibility: hidden;
 }
-home .col-3 {
-    height: 404px;
+.home .col-3 {
+    height: 430px;
 }
 
 .title-line {
@@ -475,18 +480,22 @@ div.container.container-sign-up {
     padding-bottom: 0;
 }
 
+.sign-up {
+    background-color: var(--bg-color);
+    width: 1232px;
+    height: 200px;
+    padding: 24px;
+}
+
 .sign-up-block {
-    padding: 25px 0 52px;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
 }
 
 .sign-up-block-left {
     width: 86px;
     height: 86px;
-    display: flex;
-    align-items: center;
-    padding-left: 24px;
-}
+    }
 
 .sign-up-block-right {
     padding-left: 24px;
@@ -525,11 +534,6 @@ display: flex;
     padding: 24px;
     position: absolute;
    }
-
-
-
-
-
 
 span.text-size {
     margin-bottom: 12px;
@@ -582,20 +586,20 @@ image {
     position: absolute;
     bottom: 0;
 }
-.sign-up {
-    background-color: var(--bg-color);
-    width: 1232px;
-    height: 200px;
-}
 
-.cross {
+svg.cross {
     width: 26px;
     height: 26px;
-   display: flex;
-    justify-content: flex-end;
 }
 
+svg.cross:hover {
+    cursor: pointer;
+}
 
+.sign-up-cross {
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 footer {
