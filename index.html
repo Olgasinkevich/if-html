@@ -135,7 +135,7 @@
   </symbol>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" class="sprite">
+<!--<svg xmlns="http://www.w3.org/2000/svg" class="sprite">
   <symbol id="arrow" viewBox="0 0 48 48">
     <g filter="url(#filter0_d)">
       <circle cx="24" cy="20" r="20" fill="#F3F3F4"/>
@@ -153,6 +153,12 @@
         <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
       </filter>
     </defs>
+  </symbol>
+</svg>-->
+
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite">
+  <symbol id="tick" viewBox="0 0 9 21">
+    <path d="M.941 19.823L7.1 11.612a2 2 0 000-2.4L.941 1" stroke="#383838" stroke-width="2"/>
   </symbol>
 </svg>
 
@@ -215,7 +221,7 @@
         <div class="form__placeholder text_m">Your destination or hotel name</div>
         <div class="form__placeholder text_m">Check-in — Check-out</div>
       </div>
-      <div class="form_row">
+      <div class="form_row form_row__bg">
         <select class="select_city text_m padding_left">
           <option selected value="New York">New York</option>
           <option value="Tokyo">Tokyo</option>
@@ -328,9 +334,13 @@
           Berlin, Germany
         </div>
       </div>
-      <svg class="svg__style_white carousel__button carousel__button_next">
-        <use href="#arrow"></use>
-      </svg>
+      <div class="carousel__button_next">
+        <div class="svg__style_white carousel__button">
+          <svg class="tick">
+            <use href="#tick"></use>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -437,9 +447,15 @@
         </div>
       </div>
 
-      <svg class="carousel__button carousel__button_down svg__style_white">
-        <use href="#arrow"></use>
-      </svg>
+      <div class="carousel__button carousel__button_down svg__style_white">
+
+        <svg class="tick tick__down">
+          <use href="#tick"></use>
+        </svg>
+
+      </div>
+
+
     </div>
   </div>
 </section>
@@ -496,7 +512,7 @@
               <div class="text_primary text_m text-500">Ubud Bali Resort&SPA</div>
               <button class="button score">9.4</button>
             </div>
-            <div class="flex_between">
+            <div class="flex_between padding-7">
               <div class="text_primary text_m">Bali, Indonesia</div>
               <div class="review">1324 reviews</div>
             </div>
@@ -545,7 +561,7 @@
               <div class="text_primary text_m text-500">King Kong Hostel</div>
               <button class="button score">8.9</button>
             </div>
-            <div class="flex_between">
+            <div class="flex_between padding-7">
               <div class="text_primary text_m">Rotterdam, Netherlands</div>
               <div class="review">2016 reviews</div>
             </div>
@@ -596,7 +612,7 @@
               <div class="text_primary text_m text-500">Rokoko Hotel</div>
               <button class="button score">9.1</button>
             </div>
-            <div class="flex_between">
+            <div class="flex_between padding-7">
               <div class="text_primary text_m">Ourika, Marocco</div>
               <div class="review">815 reviews</div>
             </div>
