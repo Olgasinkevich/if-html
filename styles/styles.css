@@ -123,12 +123,12 @@
     transition: transform 1s ease-in-out 200ms;
     cursor: pointer;
 }
-
+/*
 svg {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .svg__style_white {
     fill: var(--general-white);
@@ -170,7 +170,7 @@ svg {
 
 .form_row__bg {
 background-color: var(--general-white);
-    width: 1200px;
+    /*width: 1200px;*/
     border-radius: 8px;
    }
 
@@ -249,7 +249,7 @@ select.select_room {
 }
 
 .button_stroke {
-    margin-bottom: 65px;
+    /*margin-bottom: 65px;*/
     background-color: var(--stroke-color);
     padding: 0 24px;
 }
@@ -265,6 +265,7 @@ select.select_room {
 
 .button__row {
     display: flex;
+    margin-bottom: 65px;
 }
 
 .text_m {
@@ -455,6 +456,10 @@ div.text_m > p {
     position: absolute;
 }
 
+.carousel__button_next_hidden {
+    display: none;
+}
+
 .carousel__button {
     border-radius: 50%;
     background-color: var(--stroke-color);
@@ -463,7 +468,7 @@ div.text_m > p {
     position: relative;
 }
 
-    .tick {
+    .arrow {
     width: 9px;
     height: 21px;
         position: absolute;
@@ -471,7 +476,7 @@ div.text_m > p {
         left: calc(50% - 4px);
 }
 
-    .tick__down {
+    .arrow__down {
         transform: rotate(90deg);
     }
 
@@ -482,33 +487,34 @@ div.text_m > p {
 .carousel__button_down {
       margin: 48px auto 0;
 }
-/*
-svg {
-    fill: currentcolor;
-}
 
-.section svg {
-    width: 90px;
+.svg {
+       width: 90px;
     height: 90px;
+}
+/*
+.section svg {
+
     color: var(--primary);
     margin: 0 auto 48px;
 }*/
 
-.section span {
+/*.section span */
+.span__svg {
     font-size: 24px;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
     color: var(--primary-text);
+    margin: 60px auto 0;
+
 }
 
 .section_bg {
-    padding-top: 120px;
+    /*padding-top: 120px;*/
     background-color: var(--bg-color);
 }
-
+/*
 .section_bg > .container {
     margin-top: 0;
-}
+}*/
 
 .section_bg .col-3 {
     height: 430px;
@@ -524,8 +530,6 @@ svg {
 .text_l {
     font-size: 24px;
     line-height: 28px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     color: var(--primary-text);
 }
 
@@ -536,6 +540,10 @@ svg {
 .container_s {
     width: 1232px;
     height: 200px;
+}
+
+.section__container_mobile {
+    display: none;
 }
 
 .block_bg {
@@ -643,9 +651,7 @@ image.image {
 .text_primary {
     color: var(--primary);
     text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
+  }
 
 .image_back {
     display: flex;
@@ -655,9 +661,7 @@ image.image {
 
 .text_secondary {
     color: var(--secondary-text);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
+    }
 
 .text-500 {
     font-weight: 500;
@@ -752,9 +756,10 @@ ul {
         width: calc(var(--col-size) * 5);
     }
 
-    /* .col-xs-6 {
-       width: 100%;
-     }*/
+    .col-xs-6 {
+        width: 100%;
+    }
+
     .header {
         padding: 0;
         height: 100vh;
@@ -765,9 +770,23 @@ ul {
         margin: 0;
     }
 
+    .section {
+        padding-top: 40px;
+    }
+
     .h2 {
         font-size: 28px;
+        line-height: 33px;
         margin-bottom: 32px;
+    }
+
+    .h2:hover:after,
+    .nav__item_stays:hover:after, .nav__item_attraction:hover:after {
+        opacity: 0;
+    }
+
+    .nav__item_stays, .nav__item_stays:after, .nav__item_attraction {
+        visibility: hidden;
     }
 
     .row {
@@ -780,17 +799,28 @@ ul {
     }
 
     .svg {
-        width: 52.5px;
+        width: 52px;
         height: 64px;
         margin: 0 0 16px 0;
+        text-align: center;
+    }
+
+    .span__svg {
+        margin-top: 24px;
     }
 
     .col-3__svg {
         margin-bottom: 32px;
+        /* display: flex;
+         justify-content: center;*/
     }
 
     .col-3__svg_last {
         margin-bottom: 0;
+    }
+
+    .col-3_three, .col-3_four, .col-4_two, .col-4_three {
+        display: none;
     }
 
     .span__svg {
@@ -811,8 +841,7 @@ ul {
     }
 
     .select_city, .button_calendar, .select_room, .button_search,
-    .form_row > div.text_m:first-child, select.select_city
- {
+    .form_row > div.text_m:first-child, select.select_city {
         width: 312px;
     }
 
@@ -820,7 +849,62 @@ ul {
         width: 260px;
     }
 
+    .section__container_desktop {
+        display: none;
+    }
+
+    .section__container_mobile {
+        display: block;
+    }
+
+    .button {
+        min-width: 99px;
+        height: 32px;
+        /*  font-size: 24px;
+          line-height: 28px;*/
+        border-radius: 4px;
+    }
+
+    .button__row {
+        justify-content: space-around;
+        margin-bottom: 24px;
+    }
+
+    .button_stroke {
+        /*margin-bottom: 65px;*/
+        background-color: var(--stroke-color);
+        padding: 0 24px;
+    }
+
     .title__footer {
         display: block;
-           }
+    }
+
+    .text_l {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .text__box {
+        margin-top: 0;
+    }
+
+    .text__box_absolute {
+        bottom: 24px;
+    }
+
+    .carousel__button_down {
+        display: none;
+    }
+
+    .carousel__button_next_hidden {
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
 }
