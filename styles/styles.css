@@ -48,7 +48,7 @@
     min-width: 360px;
     margin: 0 auto 0;
     box-sizing: border-box;
-    padding: 0 104px 122px;
+    padding: 120px 104px; /*122px;*/
 }
 
 .header {
@@ -298,9 +298,9 @@ select.select_room {
     color: var(--primary-text);
 }
 
-.section {
+/*.section {
     padding-top: 120px;
-}
+}*/
 
 .row {
     display: flex;
@@ -376,12 +376,12 @@ footer .row {
 
 .col-3 {
     position: relative;
-    height: 343px;
+    /*height: 343px;*/
 }
-
+/*
 .col-3__svg {
     height: 170px;
-}
+}*/
 
 .col-4 {
     position: relative;
@@ -515,10 +515,10 @@ div.text_m > p {
 .section_bg > .container {
     margin-top: 0;
 }*/
-
+/*
 .section_bg .col-3 {
     height: 430px;
-}
+}*/
 
 .title-line {
     width: 100px;
@@ -535,6 +535,7 @@ div.text_m > p {
 
 .container.section__container {
     padding-bottom: 0;
+    padding-top: 0;
 }
 
 .container_s {
@@ -770,9 +771,9 @@ ul {
         margin: 0;
     }
 
-    .section {
+   /* .section {
         padding-top: 40px;
-    }
+    }*/
 
     .h2 {
         font-size: 28px;
